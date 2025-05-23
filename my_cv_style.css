@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #222;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .contact p {
+    margin: 5px 0;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+
+  .work-experience h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 2px;
+
+  }
+  
+  
+  
+
+/*  */
+.work-experience {
+    margin-bottom: 40px;
+  }
+    
+  .work-experience .job {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .work-experience .job h3 {
+    margin-top: 0;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .work-experience .job p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .work-experience .job a {
+    margin-right: 15px; 
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Font Awesome Icon Style */
+  .work-experience .job h3 i {
+    color: #0077cc;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .work-experience .job {
+      padding: 15px;
+    }
+  }
+  
+  .projects-section h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 2px;
+
+  }
+  
+  
+  .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    /* border-left: 4px solid #0077cc; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .project p {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .project ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+/*  */
+
+/* تنسيق العنوان فقط */
+.technical-skills-title h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 2px;
+
+
+  }
+  
+  /* الجريد */
+  .technical-skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  /* عناصر الجريد */
+  .skill-group h3 {
+    margin-top: 0;
+    /* color: #0077cc; */
+    margin-bottom: 8px;
+  }
+  
+  .skill-group ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+  }
+  
+  .skill-group ul li {
+    line-height: 1.5;
+  }
+    /* عنوان Soft Skills */
+/* .soft-skills-title {
+    margin-bottom: 10px;
+  } */
+  
+  .soft-skills-title h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 2px;
+
+  }
+  
+  
+  /* جريد المهارات */
+  .soft-skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  /* نفس شكل كروت skills العادية */
+  .soft-skills-section .skill-group ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+  }
+  
+  .soft-skills-section .skill-group ul li {
+    line-height: 1.5;
+  }
+  
+  .work-experience .job {
+    margin-bottom: 30px;
+  }
+  
+  .work-experience .job p {
+    line-height: 1.6;
+  }
+  
+  .work-experience .job a {
+    color: #0077cc;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  
+  .about-me {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-left: 5px solid #0077cc;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .languages-title h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 2px;
+
+  }
+  
+  
