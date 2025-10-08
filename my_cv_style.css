@@ -1,256 +1,295 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2, h3 {
-    color: #222;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  .section {
-    margin-bottom: 30px;
-  }
-  
-  .contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-  }
-  
-  .contact p {
-    margin: 5px 0;
-  }
-  
-  .project a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-  .work-experience h2 {
-    display: inline-block;
-    position: relative;
-    font-size: 24px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 2px;
+h1, h2, h3 {
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
-  }
-  
-  
-  
+ul {
+  padding-left: 18px;
+  margin: 5px 0;
+}
 
-/*  */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+/* --- Contact Section --- */
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.contact a i {
+  font-size: 15px;
+  color: #1E88E5;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact a i:hover {
+  color: #0d47a1;
+  transform: scale(1.1);
+}
+
+/* --- Work Experience --- */
 .work-experience {
-    margin-bottom: 40px;
-  }
-    
-  .work-experience .job {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .work-experience .job h3 {
-    margin-top: 0;
-    color: #333;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .work-experience .job p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .work-experience .job a {
-    margin-right: 15px; 
-    color: #0077cc;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  /* Font Awesome Icon Style */
-  .work-experience .job h3 i {
-    color: #0077cc;
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    .work-experience .job {
-      padding: 15px;
-    }
-  }
-  
-  .projects-section h2 {
-    display: inline-block;
-    position: relative;
-    font-size: 24px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 2px;
+  margin-bottom: 25px;
+}
 
-  }
-  
-  
-  .project {
-    background-color: #f9f9f9;
-    padding: 20px;
-    /* border-left: 4px solid #0077cc; */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .project h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .project p {
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  
-  .project ul {
-    padding-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .project a {
-    color: #0077cc;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-/*  */
+.work-experience h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+}
 
-/* تنسيق العنوان فقط */
-.technical-skills-title h2 {
-    display: inline-block;
-    position: relative;
-    font-size: 28px;
-    padding-bottom: 6px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 2px;
+.work-experience .job {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
 
+.work-experience .job h3 {
+  margin-top: 0;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
 
-  }
-  
-  /* الجريد */
-  .technical-skills-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
-  
-  /* عناصر الجريد */
-  .skill-group h3 {
-    margin-top: 0;
-    /* color: #0077cc; */
-    margin-bottom: 8px;
-  }
-  
-  .skill-group ul {
-    padding-left: 20px;
-    margin: 0;
-    list-style-type: disc;
-  }
-  
-  .skill-group ul li {
-    line-height: 1.5;
-  }
-    /* عنوان Soft Skills */
-/* .soft-skills-title {
-    margin-bottom: 10px;
-  } */
-  
-  .soft-skills-title h2 {
-    display: inline-block;
-    position: relative;
-    font-size: 28px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 2px;
+.work-experience .job p {
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
 
-  }
-  
-  
-  /* جريد المهارات */
-  .soft-skills-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-  }
-  
-  /* نفس شكل كروت skills العادية */
-  .soft-skills-section .skill-group ul {
-    padding-left: 20px;
-    margin: 0;
-    list-style-type: disc;
-  }
-  
-  .soft-skills-section .skill-group ul li {
-    line-height: 1.5;
-  }
-  
-  .work-experience .job {
-    margin-bottom: 30px;
-  }
-  
-  .work-experience .job p {
-    line-height: 1.6;
-  }
-  
-  .work-experience .job a {
-    color: #0077cc;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 8px;
-  }
-  
-  .about-me {
-    background-color: #e8f0fe;
-    padding: 20px;
-    border-left: 5px solid #0077cc;
-    border-radius: 8px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .languages-title h2 {
-    display: inline-block;
-    position: relative;
-    font-size: 28px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 2px;
+.work-experience .job a {
+  margin-top: 4px;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  }
-  
-  
+/* --- Projects --- */
+.projects-section h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 2px;
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project p {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.project ul {
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.project a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* --- Skills Sections --- */
+.technical-skills-title h2,
+.soft-skills-title h2,
+.languages-title h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0077cc;
+}
+
+.technical-skills-section,
+/* .soft-skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.skill-group {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.skill-group h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #0077cc;
+}
+
+.skill-group ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.skill-group ul li {
+  font-size: 13px;
+  line-height: 1.4;
+} */
+
+/* --- About Me --- */
+.about-me {
+  background-color: #e8f0fe;
+  padding: 8px;
+  border-left: 4px solid #0077cc;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* === Smaller Skills & Languages Section === */
+.languages-list {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.languages-list li {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.languages-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 13px;
+  color: #000;
+}
+
+/* --- New Enhanced Soft Skills Styling --- */
+/* --- Soft Skills One-Line Style --- */
+.soft-skills-section {
+  display: flex;
+  flex-wrap: wrap; /* عشان لو الشاشة صغيرة ينزل سطر */
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.soft-skills-section .skill-group {
+  display: contents; /* يخلي العناصر كلها تتجمع في سطر واحد */
+}
+
+.soft-skills-section .skill-group ul {
+  display: contents;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.soft-skills-section .skill-group li {
+  display: inline;
+  margin-right: 10px;
+  position: relative;
+}
+
+.soft-skills-section .skill-group li::after {
+  content: "•";
+  color: #0077cc;
+  margin-left: 8px;
+}
+
+.soft-skills-section .skill-group li:last-child::after {
+  content: "";
+}
+
+/* تقليل المسافات العامة */
+.section {
+  margin-bottom: 15px;
+}
+
+.technical-skills.compact {
+  display: block !important;
+}
+
+.technical-skills.compact .skills-line {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #333;
+  margin-top: 5px;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.technical-skills.compact strong {
+  color: #000;
+}
+/* --- Soft Skills One-Line Layout --- */
+.soft-skills-section {
+  display: flex;
+  flex-wrap: wrap; /* ينزل سطر لو المساحة صغيرة */
+  gap: 6px 10px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+  margin-left: 5px;
+}
+
+.soft-skills-section ul {
+  display: contents; /* يخلي العناصر كلها في نفس السطر */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.soft-skills-section li {
+  display: inline;
+  margin-right: 8px;
+  white-space: nowrap; /* يمنع تقسيم الكلمة */
+}
+
+.soft-skills-section li::after {
+  content: "•";
+  color: #000;
+  margin-left: 8px;
+}
+
+.soft-skills-section li:last-child::after {
+  content: "";
+}
